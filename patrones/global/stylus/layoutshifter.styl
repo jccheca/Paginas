@@ -1,0 +1,37 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+@import 'stylus/index.styl'
+
+vendor-prefixes = o ms moz webkit official
+colorFondo = rgba(89, 171, 96, 0.5)
+colorFondoCar = linear-gradient(rgba(129, 200, 186, 0.88), #fff, rgba(75, 123, 123, 0.95))
+
+.shifter
+	display inline-block
+	margin 1em 0
+	max-width 1024px
+	text-align justify
+
+.shifterBottom
+	padding 20px 0
+	overflow hidden
+
+.shifterTop
+	margin-bottom 20px
+
+.shifterColumn
+	width 48%
+	float left
+	
+.paddRow
+	padding 1%
+
+
+@media screen and (max-width: 1024px)
+	.shifter
+		max-width 900px
+
+@media screen and (max-width: 768px)
+	.shifter
+		max-width 600px
+		

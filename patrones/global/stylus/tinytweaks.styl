@@ -1,0 +1,54 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+@import 'stylus/index.styl'
+
+vendor-prefixes = o ms moz webkit official
+colorFondo = rgba(89, 171, 96, 0.5)
+colorFondoCar = linear-gradient(rgba(129, 200, 186, 0.88), #fff, rgba(75, 123, 123, 0.95))
+
+.tweaks
+	background rgba(231, 236, 233, 0.66)
+	display inline-block
+	margin 0 auto
+	max-width 700px
+	padding .5em
+	text-align center
+	
+.tweaksBio
+	font-size 1em
+	text-align justify
+	
+.tweaksImg
+	height 350px
+	width 90%
+	border-radius 0 0 20px 20px
+	box-shadow 4px 4px 16px #666
+
+.tweaksName
+	font-size 1.5em
+
+.tweaksTitle
+.tweaksUser
+	font-size 1.3em
+
+@media only screen and (min-width: 480px)
+	.tweaksBio
+		font-size 1.2em
+		text-align justify	
+	.tweaksImg
+		width auto
+		height 400px
+	.tweaksName
+		font-size 2em
+	.tweaksTitle
+	.tweaksUser
+		font-size 1.5em
+
+@media only screen and (min-width: 768px)
+	.tweaksName
+		font-size 4em
+	.tweaksTitle
+	.tweaksUser
+		font-size 2em
+
+		

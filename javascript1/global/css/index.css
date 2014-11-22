@@ -1,0 +1,159 @@
+body {
+  font-size: 16px;
+  font-family: verdana;
+  color: #000;
+}
+.cajaCaracteristica {
+  background: -o-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -ms-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -moz-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -webkit-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 1em 0.5em;
+  width: 90%;
+}
+.cajaCaracteristica header .imgCar {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.cajaCaracteristica header .titCar {
+  color: #555;
+}
+.cajaCaracteristica section .textoCar {
+  text-align: justify;
+}
+.cajaCaracteristica footer {
+  text-align: right;
+}
+.cajaCaracteristica footer .btnCar {
+  background: -o-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -ms-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -moz-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: -webkit-linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  background: linear-gradient(rgba(129,200,186,0.88), #fff, rgba(75,123,123,0.95));
+  border: 1px solid rgba(170,255,252,0.33);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #000;
+  padding: 0.5em;
+  text-decoration: none;
+}
+.cajaCaracteristica footer .btnCar:hover {
+  background: -o-linear-gradient(top, #faf9f2 0%, #c4c2a5 51%, #adaa79 53%, #faf9f2 100%);
+  background: -ms-linear-gradient(top, #faf9f2 0%, #c4c2a5 51%, #adaa79 53%, #faf9f2 100%);
+  background: -moz-linear-gradient(top, #faf9f2 0%, #c4c2a5 51%, #adaa79 53%, #faf9f2 100%);
+  background: -webkit-linear-gradient(top, #faf9f2 0%, #c4c2a5 51%, #adaa79 53%, #faf9f2 100%);
+  background: linear-gradient(to bottom, #faf9f2 0%, #c4c2a5 51%, #adaa79 53%, #faf9f2 100%);
+}
+.cajaGeneral {
+  text-align: center;
+}
+.cajaHeader {
+  background: rgba(89,112,171,0.5);
+  border: 4px solid rgba(89,112,171,0.4);
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+}
+.cajaHeader .titHeader {
+  color: #f00;
+}
+/*Media query*/
+@media only screen and (min-width: 768px) {
+  .cajaCaracteristica {
+    width: 42%;
+  }
+}
+/*Media query*/
+@media only screen and (min-width: 992px) {
+  .cajaCaracteristica {
+    width: 30%;
+  }
+}
+/*
+body
+	background linear-gradient(rgba(213, 218, 217, 0.88), rgba(255, 255, 255, 1), rgba(202, 207, 207, 0.95))
+	color #fff
+	font-family verdana
+	font-size 16px
+	padding .5em .2em .1em 1em
+	text-align center
+
+	header
+		.tit
+			background linear-gradient(rgba(213, 218, 217, 0.88), rgba(255, 255, 255, 1), rgba(202, 207, 207, 0.95))
+			border 3px solid #f00
+			border-radius 114px 0px 108px 5px
+			color #000
+			display inline-block
+			margin .5em
+			padding .5em
+			text-align center
+
+	nav
+		background rgba(126, 194, 216, 0.48)
+		ul
+			display inline-block
+			list-style-type none
+
+			li
+				background rgba(175, 175, 207, 0.9)
+				border-radius 4px 4px 4px 4px
+				color #000
+				display inline-block
+				margin .3em
+				padding .4em
+				text-decoration none
+				a
+					text-decoration none
+		
+	section
+		.articleActor
+			background #389
+			border-radius 6px 6px 6px 6px
+			display inline-block
+			margin .5em
+			padding .5em
+			vertical-align top
+
+			header
+				.nomActor
+					color #fff
+
+			section
+				.imgActor
+					border 4px solid #aaa
+					border-radius 6px 6px 6px 6px
+					width 96%
+					height 150px
+
+			.footerActor
+				text-align left
+
+				a
+					text-decoration none
+
+					.linkVideo
+						color #fff
+						&:hover
+							text-decoration underline
+
+	.footerPag
+		background rgba(164, 171, 209, 0.1)
+		.fAutor
+			color #666
+		a
+			text-decoration none
+
+			.fWebAutor
+				color #666
+				&:hover
+					text-decoration underline
+*/

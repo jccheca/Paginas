@@ -1,0 +1,103 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+@import 'stylus/index.styl'
+
+vendor-prefixes = o ms moz webkit official
+colorFondo = rgba(89, 171, 96, 0.5)
+colorFondoCar = linear-gradient(rgba(129, 200, 186, 0.88), #fff, rgba(75, 123, 123, 0.95))
+grisA = #141f23
+grisB = #3a3f3f
+
+.canvas
+	overflow hidden
+	position relative
+	text-align left
+	
+	&Main
+		padding 10px 0
+		
+	&Menu
+		left -200px
+		position absolute
+		top 0
+		width 200px
+		transition .3s
+		&.isActive
+			left 0
+		
+	&Sidebar
+		position absolute
+		right -200px
+		top 0
+		width 200px
+		transition .3s
+		&.isActive
+			right 0
+			
+.header
+	background grisA
+	color white
+	padding 10px
+	position relative
+	
+	.headerButton
+		background orange
+		border none
+		border-radius 10px
+		color white
+		display none
+		padding 10px
+		position absolute
+		right 10px
+		top 20px
+		&.isActive
+			display block
+			
+	.headerLogo
+		font-size 18px
+		font-weight normal
+		text-decoration underline
+		text-shadown 0 0 10px verdeA
+		text-transform uppercase
+		line-height: 40px;
+
+.mainMenu
+	background grisA
+	height 52px
+	left -200px
+	padding 0
+	position absolute
+	top 0
+	transition .3s
+	&.isActive
+		left 0
+		
+	.mainMenuItem
+		line-height 40px
+		text-align center
+		transition .3s
+		list-style none
+		display block
+		padding 0 .5em
+		
+		.mainMenuLink
+			background grisA
+			color white
+			display block
+			font-size 14px
+			padding: .5em .8em;
+			text-decoration none
+			text-transform uppercase
+			&:hover
+				background grisB
+		
+@media screen and (min-width: 767px)
+	.mainMenu
+		left initial
+		right 0
+		&.isActive
+			left initial
+			right 0
+			
+		.mainMenuItem
+			display inline-block

@@ -1,0 +1,85 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+vendor-prefixes = o ms moz webkit official
+
+body
+	/*background rgba(150, 150, 150, 1)*/
+	/*background #f9a*/
+	/*background #a667be*/
+	background linear-gradient(rgba(213, 218, 217, 0.88), rgba(255, 255, 255, 1), rgba(202, 207, 207, 0.95))
+	color #fff
+	font-family verdana
+	font-size 16px
+	padding .5em .2em .1em 1em
+	text-align center
+	
+	header
+		.tit
+			background linear-gradient(rgba(213, 218, 217, 0.88), rgba(255, 255, 255, 1), rgba(202, 207, 207, 0.95))
+			border 3px solid #f00
+			border-radius 114px 0px 108px 5px
+			color #000
+			display inline-block
+			margin .5em
+			padding .5em
+			text-align center
+
+	nav
+		background rgba(126, 194, 216, 0.48)
+		ul
+			display inline-block
+			list-style-type none
+
+			li
+				background rgba(175, 175, 207, 0.9)
+				border-radius 4px 4px 4px 4px
+				color #000
+				display inline-block
+				margin .3em
+				padding .4em
+				text-decoration none
+				a
+					text-decoration none
+		
+	section
+		.articleActor
+			background #389
+			border-radius 6px 6px 6px 6px
+			display inline-block
+			margin .5em
+			padding .5em
+			vertical-align top
+
+			header
+				.nomActor
+					color #fff
+
+			section
+				.imgActor
+					border 4px solid #aaa
+					border-radius 6px 6px 6px 6px
+					width 96%
+					height 150px
+
+			.footerActor
+				text-align left
+
+				a
+					text-decoration none
+
+					.linkVideo
+						color #fff
+						&:hover
+							text-decoration underline
+
+	.footerPag
+		background rgba(164, 171, 209, 0.1)
+		.fAutor
+			color #666
+		a
+			text-decoration none
+
+			.fWebAutor
+				color #666
+				&:hover
+					text-decoration underline

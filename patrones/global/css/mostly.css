@@ -1,0 +1,49 @@
+body {
+  color: #000;
+  font-family: verdana;
+  font-size: 16px;
+}
+.cajaGeneral {
+  text-align: center;
+}
+.cajaHeader {
+  background: rgba(97,129,166,0.05);
+  border: 2px solid rgba(89,112,171,0.4);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 6px 6px 16px #aaa;
+  box-shadow: 6px 6px 16px #aaa;
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.cajaHeader .subTitHeader {
+  color: rgba(51,87,62,0.97);
+}
+.cajaHeader .titHeader {
+  color: rgba(99,117,124,0.7);
+}
+.verdeA {
+  background: #70aa39;
+}
+.verdeB {
+  background: #99c335;
+}
+.verdeC {
+  background: #cde145;
+}
+.mostly {
+  display: inline-block;
+  margin: 1em 0;
+  max-width: 1024px;
+  text-align: justify;
+}
+.mostlyColumn {
+  float: left;
+  padding: 1%;
+  width: 48%;
+}
+.paddRow {
+  padding: 1%;
+}

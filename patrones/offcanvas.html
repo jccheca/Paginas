@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- HTML: Idioma por página -->
+<html lang="es">
+	<!-- Etiquetas necesarias que no son contenido -->
+	<head>
+		<!-- Titulo de la página -->
+		<title>Design Off Canvas</title>
+		<!-- Atributo: codificación -->
+		<meta charset="UTF-8"/>
+		<!--viewport es el ancho de la pantalla, hace funcionar el responde design --- con ancho igual al ancho del dispositivo, no permite escalar -->
+		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no"/>
+		<!-- Descripción: entre 155 a 160 caracteres, se ve reflejado en google -->
+		<meta name="description" content="Es es mi primer página"/>
+		<!-- Palabras clave -->
+		<meta name="keywords" content="html,programación,algoritmos"/>
+		<!-- Autor de la página -->
+		<meta name="author" content="Juan Carlos Checa"/>
+		<!-- Imagen que aparece en la pestaña -->
+		<link rel="shortcut icon" type="image/x-icon" href="global/img/control.ico"/>
+		<!-- Hoja de estilos para normalizar los estilos -->
+		<link rel="stylesheet" type="text/css" href="global/css/normalize.css"/>
+		<!-- Hoja de estilos de la página -- limpia memoria caché -->
+		<link rel="stylesheet" type="text/css" href="global/css/offcanvas.css?v=1.0"/>
+		<!-- Código JavaScript -->
+		<script type="text/javascript" src="global/js/hammer.min.js"></script>
+	</head>
+
+	<!-- Contenido de la página -->
+	<body class="cajaGeneral">
+		<!-- Cabecera -->
+		<header>
+			<div class="cajaHeader">
+				<h1 class="titHeader">PATRONES DE DISEÑO</h1>
+				<h2 class="subTitHeader">Off Canvas</h2>
+			</div>
+		</header>
+		
+		<!-- Menú de navegación principal -->
+		<nav>
+		</nav>
+		
+		<!-- Sección -->
+		<section class="canvas">
+			<header class="header verdeA isActive">
+				<h1 class="headerLogo">Off Canvas</h1>
+				<button id="hideMenu" class="headerButton">Ocultar Menu</button>
+				<button id="showMenu" class="headerButton isActive">Mostrar Menu</button>
+				<ul id="menu" class="mainMenu">
+					<li class="mainMenuItem"><a href="" class="mainMenuLink">Cursos</a></li>
+					<li class="mainMenuItem"><a href="" class="mainMenuLink">Conferencias</a></li>
+					<li class="mainMenuItem"><a href="" class="mainMenuLink">Contactos</a></li>
+					<li class="mainMenuItem"><a href="" class="mainMenuLink">Otros</a></li>
+				</ul>
+			</header>
+
+			<div class="canvasMain verdeB">
+				<p>--Diseña y crea diversos tipos de torneos. Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo. Diseña y crea diversos tipos de torneos.Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo.
+				Diseña y crea diversos tipos de torneos. Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo. Diseña y crea diversos tipos de torneos.Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo.
+				</p>
+			</div>
+			
+			<div class="canvasSidebar verdeC">
+				<p>--Diseña y crea diversos tipos de torneos. Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo. Diseña y crea diversos tipos de torneos.Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo.
+				Diseña y crea diversos tipos de torneos. Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo. Diseña y crea diversos tipos de torneos.Permite administrar jugadores, equipos, jueces, recintos y calendario del torneo.
+				</p>
+			
+			</div>
+		</section>
+
+		<!-- Sección para publicidad y otros -->
+		<aside>
+		</aside>
+		
+		<!-- Pie de página -->
+		<footer>
+			<p class="fAutor">Autor:</p>
+			<a href="" target="_blank">
+				<p class="fWebAutor">Juan Carlos Checa</p>
+			</a>
+		</footer>
+
+		<!-- Llamado a código de javaScript -->
+		<script type="text/javascript">
+			var $buttonShowMenu = document.getElementById('showMenu');
+			var $buttonHideMenu = document.getElementById('hideMenu');
+			var $menu = document.getElementById('menu');
+
+			var $body = document.querySelector('body');
+			var body = new Hammer($body);
+
+			//body.on('nombre del evento',manejador del evento);
+
+			body.on('tap',function(){
+				console.log('Esto es un tap');
+			})
+
+			body.on('panright',showMenu);
+			body.on('panleft',hideMenu);
+
+			var showMenu = function(){
+				//console.log('Muestra el menu leo');
+				$buttonShowMenu.classList.remove('isActive');
+				$buttonHideMenu.classList.add('isActive');
+				$menu.classList.add('isActive');
+			}
+			var hideMenu = function(){
+				//console.log('Muestra el menu leo');
+				$buttonShowMenu.classList.add('isActive');
+				$buttonHideMenu.classList.remove('isActive');
+				$menu.classList.remove('isActive');
+			}
+			$buttonShowMenu.addEventListener("click",showMenu);
+			$buttonHideMenu.addEventListener("click",hideMenu);
+		</script>
+	</body>
+</html>

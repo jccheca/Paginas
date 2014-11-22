@@ -1,0 +1,21 @@
+@import 'nib/gradients'
+@import 'nib/vendor'
+@import 'stylus/index.styl'
+
+vendor-prefixes = o ms moz webkit official
+colorFondo = rgba(89, 171, 96, 0.5)
+colorFondoCar = linear-gradient(rgba(129, 200, 186, 0.88), #fff, rgba(75, 123, 123, 0.95))
+
+.columnDropRow
+	display inline-block
+	margin 2px 0
+	padding 1%
+	
+@media only screen and (min-width: 480px)
+	.columnDropRow
+		width 46%
+		
+@media only screen and (min-width: 768px)
+	.columnDropRow
+		width 22%
+		
